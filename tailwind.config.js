@@ -6,7 +6,18 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        vibes: ["var(--font-vibes)", "cursive"],
+        garamod: ["var(--font-garamod)", "serif"],
+      },
+      colors: {
+        trigo: "#eaa33a",
+        fondo: "#fdf6ed",
+        cocoa: "#7d2c01",
+        muted: "#D8CFC2",
+      },
+    },
   },
   plugins: [],
 };
