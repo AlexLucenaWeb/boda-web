@@ -53,12 +53,12 @@ function FadeInOnView({ children, className = "", delay = 0 }) {
 
 export default function WeddingPlan() {
   const moments = [
-    { time: "17.00", title: "Ceremonia", place: "", align: "left" },
-    { time: "18.30", title: "Recepción", place: "Patio de luces", align: "right" },
-    { time: "19.00", title: "Cóctel", place: "Jardines", align: "left" },
-    { time: "20.00", title: "Banquete", place: "Salón Principal", align: "right" },
-    { time: "22.00", title: "Fiesta", place: "Patio de luces", align: "left" },
-    { time: "00.00", title: "Recena", place: "Patio de luces", align: "right" },
+    { time: "17.00", title: "Ceremonia", place: "Ermita Nuestra Senora", place2:"de Gracia", align: "left" },
+    { time: "18.30", title: "Recepción",  place:"Palacete de Belmonte", place2: "Patio de luces",align: "right" },
+    { time: "19.00", title: "Cóctel", place:"Palacete de Belmonte", place2: "Jardines", align: "left" },
+    { time: "20.00", title: "Banquete", place:"Palacete de Belmonte", place2: "Salón Principal", align: "right" },
+    { time: "22.00", title: "Fiesta", place:"Palacete de Belmonte",place2: "Patio de luces", align: "left" },
+    { time: "00.00", title: "Recena", place:"Palacete de Belmonte", place2: "Patio de luces", align: "right" },
   ];
 
   return (
@@ -75,7 +75,8 @@ export default function WeddingPlan() {
               <span className="absolute left-1/2 top-2.5 h-2 w-2 rounded-full bg-cocoa -translate-x-1/2" />
               <p>{m.time}</p>
               <p className="text-2xl font-semibold">{m.title}</p>
-              {m.place ? <p className="text-sm">{m.place}</p> : null}
+              <p className="text-sm">{m.place}</p>
+              <p className="text-sm">{m.place2}</p>
             </div>
           </FadeInOnView>
         ))}
