@@ -1,9 +1,74 @@
-export default function HeroImage({ props }) {
+"use client";
+
+import { useEffect, useRef } from "react";
+
+export default function HeroImage() {
+  const sectionRef = useRef(null);
+  const bgRef = useRef(null);
+
+  useEffect(() => {
+    const prefersReduced =
+      window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
+
+    if (prefersReduced) return;
+
+    let rafId = 0;
+
+    const clamp01 = (v) => Math.max(0, Math.min(1, v));
+
+    const update = () => {
+      const section = sectionRef.current;
+      const bg = bgRef.current;
+      if (!section || !bg) return;
+
+      const rect = section.getBoundingClientRect();
+
+      // Progreso: 0 cuando el hero está arriba, 1 cuando has scrolleado su altura
+      const progress = clamp01((-rect.top) / rect.height);
+
+      // 1) Blanco y negro gradual
+      bg.style.filter = `grayscale(${progress * 100}%)`;
+
+      // 2) Parallax (opcional)
+      const parallax = (-rect.top) * 0.25; // ajusta 0.15–0.35
+      bg.style.transform = `translateY(${parallax}px) scale(1.12)`;
+    };
+
+    const onScroll = () => {
+      cancelAnimationFrame(rafId);
+      rafId = requestAnimationFrame(update);
+    };
+
+    update();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+
+    return () => {
+      cancelAnimationFrame(rafId);
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+    };
+  }, []);
+
   return (
-    <section data-component="HeroImage" className="max-w-full flex justify-center bg-fondo">
-      <div className="relative h-[500px] min-h-[420px] w-full overflow-hidden flex justify-center bg-center bg-cover">
-        <div className="flex items-center justify-center">
-          <h1 className="text-4xl md:text-5xl text-white text-vibes">Nina & Alex</h1>
+    <section
+      ref={sectionRef}
+      className="relative max-w-full flex justify-center h-screen overflow-hidden"
+    >
+      {/* Capa parallax + grayscale */}
+      <div
+        ref={bgRef}
+        className="absolute inset-0 bg-cover bg-center will-change-transform will-change-filter"
+        style={{ backgroundImage: "url('/images/heroWeb.png')" }}
+        aria-hidden="true"
+      />
+
+      {/* Contenido */}
+      <div className="relative z-10 w-full">
+        <div className="text-cocoa py-10 mt-30">
+          <h1 className="text-6xl font-medium font-vibes text-center">
+            Nina <br /> & <br /> Alex
+          </h1>
         </div>
       </div>
     </section>

@@ -7,6 +7,9 @@ export default function Home() {
   return (
     <main className="">
         <HeroImage/>
+        <WeddingInfo/>
+        <Palacete/>
+        <WeddingPlan/>
     </main>
   );
 }
