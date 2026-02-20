@@ -7,7 +7,7 @@ export default function WeddingInfo() {
         >
           <div className="text-center tex-garamod text-lg"> 
 
-            <h2 className="text-5xl text-vibes py-4">¡Nos casamos!</h2>
+            <h2 className="text-5xl py-4">¡Nos casamos!</h2>
 
             <div className="space-y-3">
               <p className="text-2xl flex gap-5 justify-center">
