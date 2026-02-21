@@ -11,11 +11,11 @@ export default function WeddingInfo() {
 
             <div className="space-y-3">
               <p className="text-2xl flex gap-5 justify-center">
-                  <spa>24</spa>
-                  <spa>-</spa>
-                  <spa>25</spa>
-                  <spa>-</spa>
-                  <spa>26</spa>
+                  <span>24</span>
+                  <span>-</span>
+                  <span>25</span>
+                  <span>-</span>
+                  <span>26</span>
               </p>
               <div className="flex justify-center items-center gap-2">
                 <span className="w-8 h-px bg-amber-950"></span>
