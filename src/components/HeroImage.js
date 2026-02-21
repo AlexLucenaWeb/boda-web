@@ -65,11 +65,11 @@ export default function HeroImage() {
 
       {/* Contenido */}
       <div className="relative z-10 w-full">
-        <div className="text-cocoa py-10 mt-30">
-          <h1 className="text-6xl font-medium font-vibes text-center">
+        <div className="text-rosa pt-32">
+          {/* <h1 className="text-6xl font-medium font-vibes text-center">
             Nina <br /> & <br /> Alex
-          </h1>
-           <h1 className="text-6xl font-medium font-alex text-center">
+          </h1> */}
+           <h1 className="text-7xl font-medium font-alex text-center">
             Nina <br /> & <br /> Alex
           </h1>
         </div>

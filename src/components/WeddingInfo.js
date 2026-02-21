@@ -3,7 +3,7 @@ export default function WeddingInfo() {
     return (
         <section 
           data-component="Welcome" 
-          className="max-w-full px-4 flex justify-center py-10 text-cocoa bg-fondo"
+          className="max-w-full px-4 flex justify-center py-10 text-rosa bg-crema"
         >
           <div className="text-center tex-garamod text-lg"> 
 

@@ -3,7 +3,7 @@ export default function Footer() {
     return (
         <section 
           data-component="Fotoer" 
-          className="max-w-full px-4 flex justify-center pt-10 pb-20 bg-title text-fondo"
+          className="max-w-full px-4 flex justify-center pt-10 pb-20 bg-rosa text-crema"
         >
           <div className="text-center tex-garamod text-lg"> 
 

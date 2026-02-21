@@ -14,9 +14,10 @@ module.exports = {
       },
       colors: {
         trigo: "#eaa33a",
-        fondo: "#fdf6ed",
         cocoa: "#7d2c01",
         muted: "#D8CFC2",
+        crema: "#fdf6ed",
+        rosa: "#f08e80",
       },
     },
   },

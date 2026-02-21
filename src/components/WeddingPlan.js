@@ -57,17 +57,17 @@ export default function WeddingPlan() {
   ];
 
   return (
-    <section data-component="Welcome" className="max-w-full px-4 py-10 bg-fondo text-cocoa">
+    <section data-component="Welcome" className="max-w-full px-4 py-10 bg-crema text-rosa">
       <h2 className="text-2xl mb-10">Programa del gran día</h2>
 
       <div className="w-full relative text-xl">
         {/* Línea central */}
-        <div className="w-[2px] absolute top-3 bottom-3 left-1/2 -translate-x-1/2 bg-cocoa h-full" />
+        <div className="w-[2px] absolute top-3 bottom-3 left-1/2 -translate-x-1/2 bg-rosa h-full" />
 
         {moments.map((m, i) => (
           <FadeInOnView key={`${m.time}-${m.title}`} delay={i * 60}>
             <div className={`pb-8 relative ${m.align === "right" ? "text-right" : ""}`}>
-              <span className="absolute left-1/2 top-2.5 h-2 w-2 rounded-full bg-cocoa -translate-x-1/2" />
+              <span className="absolute left-1/2 top-2.5 h-2 w-2 rounded-full bg-rosa -translate-x-1/2" />
               <p>{m.time}</p>
               <p className="text-2xl font-semibold">{m.title}</p>
               <p className="text-sm">{m.place}</p>
@@ -78,7 +78,7 @@ export default function WeddingPlan() {
       </div>
        <FadeInOnView delay={300}>
           <div className={`pb-8 relative text-right`}>
-            <span className="absolute left-1/2 top-2.5 h-2 w-2 rounded-full bg-cocoa -translate-x-1/2" />
+            <span className="absolute left-1/2 top-2.5 h-2 w-2 rounded-full bg-rosa -translate-x-1/2" />
             <p>00.00</p>
             <p className="text-2xl font-semibold">Recena</p>
             <p className="text-sm">Palacete de Belmonte</p>
