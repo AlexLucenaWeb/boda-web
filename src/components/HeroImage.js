@@ -69,6 +69,9 @@ export default function HeroImage() {
           <h1 className="text-6xl font-medium font-vibes text-center">
             Nina <br /> & <br /> Alex
           </h1>
+           <h1 className="text-6xl font-medium font-alex text-center">
+            Nina <br /> & <br /> Alex
+          </h1>
         </div>
       </div>
     </section>

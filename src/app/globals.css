@@ -25,6 +25,10 @@ body {
     font-family: var(--font-vibes), cursive;
   }
 
+  .text-alex {
+    font-family: var(--font-alex), cursive;
+  }
+
   .text-garamod {
     font-family: var(--font-garamod), serif;
   }

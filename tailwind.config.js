@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         vibes: ["var(--font-vibes)", "cursive"],
         garamod: ["var(--font-garamod)", "serif"],
+        alex: ["var(--font-alex)", "cursive"],
       },
       colors: {
         trigo: "#eaa33a",
