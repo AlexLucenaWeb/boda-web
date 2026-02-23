@@ -4,11 +4,12 @@ export default function Footer(props) {
       es: {
         title: '¡Os Esperamos!',
         intro: 'Si tienes alguna alergia o necesitas, por favor comunícanoslo por teléfono.',
-        intro2: '¡Os daremos más información cuando se acerque la fecha, estad atentos!'
+        intro2: 'Os daremos más información cuando se acerque la fecha ¡estad atentos!'
       },
       hz: {
         title: 'Veselimo se vašem dolasku!',
-        intro: 'Ako imate bilo kakvu alergiju ili trebate posebnu opciju, molimo vas da nam to javite telefonom.'
+        intro: 'Ako imate bilo kakvu alergiju ili trebate posebnu opciju, molimo vas da nam to javite telefonom.',
+        intro2: 'Dat ćemo vam više informacija kako se datum bude približavao — pratite nas!'
       }
     }
     return (
