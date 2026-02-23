@@ -10,8 +10,8 @@ export default function WeddingInfo(props) {
       hz: {
         title: 'Naše Vjenčanje',
         month: 'Travanj',
-        intro: 'Provest ćemo vikend zajedno kako bismo proslavili i podijelili s vama ovaj za nas poseban trenutak. Radujemo se vašem dolasku u',
-        sp: 'Španjolskoj'
+        intro: 'Provest ćemo vikend zajedno kako bismo proslavili i podijelili s vama naše posebane trenutke. Radujemo se vašem dolasku u',
+        sp: 'Španjolsku'
       }
     }
 
