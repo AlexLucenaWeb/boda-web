@@ -49,7 +49,7 @@ function FadeInOnView({ children, className = "", delay = 0 }) {
 export default function WeddingPlan(props) {
     const text = {
       es: {
-        programa: 'Programa del gran día',
+        programa: 'Lo que tenemos preparado',
         ceremonia:'Ceremonia',
         recepcion:'Recepción',
         coctel:'Cóctel',
@@ -91,19 +91,19 @@ export default function WeddingPlan(props) {
   ];
 
   return (
-    <section data-component="Welcome" className="max-w-full px-4 py-10 bg-crema text-rosa">
-      <h2 className="text-2xl mb-10">{text[props.lang].programa}</h2>
+    <section data-component="Welcome" className="max-w-full px-4 py-10 bg-crema text-gray-700">
+      <h2 className="text-2xl mb-10 text-center text-rosa font-semibold">{text[props.lang].programa}</h2>
 
       <div className="w-full relative text-xl">
         {/* Línea central */}
-        <div className="w-[2px] absolute top-3 bottom-3 left-1/2 -translate-x-1/2 bg-rosa h-full" />
+        <div className="w-[2px] absolute top-10 bottom-3 left-1/2 -translate-x-1/2 bg-rosa h-full" />
 
         {moments.map((m, i) => (
           <FadeInOnView key={`${m.time}-${m.title}`} delay={i * 60}>
             <div className={`pb-8 relative ${m.align === "right" ? "text-right" : ""}`}>
-              <span className="absolute left-1/2 top-2.5 h-2 w-2 rounded-full bg-rosa -translate-x-1/2" />
+              <span className="absolute left-1/2 top-10 h-2 w-2 rounded-full bg-rosa -translate-x-1/2" />
               <p>{m.time}</p>
-              <p className="text-2xl font-semibold">{m.title}</p>
+              <p className="text-2xl font-semibold text-rosa">{m.title}</p>
               <p className="text-sm">{m.place}</p>
               <p className="text-sm">{m.place2}</p>
             </div>
@@ -112,9 +112,9 @@ export default function WeddingPlan(props) {
       </div>
        <FadeInOnView delay={300}>
           <div className={`pb-8 relative text-right`}>
-            <span className="absolute left-1/2 top-2.5 h-2 w-2 rounded-full bg-rosa -translate-x-1/2" />
+            <span className="absolute left-1/2 top-8 h-2 w-2 rounded-full bg-rosa -translate-x-1/2" />
             <p>00.00</p>
-            <p className="text-2xl font-semibold">{text[props.lang].recena}</p>
+            <p className="text-2xl font-semibold text-rosa">{text[props.lang].recena}</p>
             <p className="text-sm">Palacete de Belmonte</p>
             <p className="text-sm">{text[props.lang].patio}</p>
           </div>

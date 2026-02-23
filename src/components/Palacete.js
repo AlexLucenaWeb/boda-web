@@ -27,8 +27,8 @@ export default function Palacete() {
       // 👉 RETRASO del color:
       // - start: cuándo empieza a perder B/N
       // - end: cuándo ya está totalmente en color
-      const start = 0.20; // sube esto para retrasar más (0.35–0.6)
-      const end = 0.90;   // baja esto si quieres que termine antes (0.75–0.95)
+      const start = 0.10; // sube esto para retrasar más (0.35–0.6)
+      const end = 0.80;   // baja esto si quieres que termine antes (0.75–0.95)
 
       const t = clamp01((progress - start) / (end - start)); // 0..1 en ese tramo
       const eased = t ** 1.3; // suaviza (opcional)
