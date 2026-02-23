@@ -8,16 +8,10 @@ export default function WeddingInfo(props) {
         sp: 'España'
       },
       hz: {
-        title: 'Vjenčamo se!',
+        title: 'Naše Vjenčanje',
         month: 'Travanj',
-        intro: 'Provest ćemo vikend zajedno kako bismo proslavili i podijelili ovaj tako važan trenutak. Sve vas očekujemo u',
-        sp: 'Španjolska'
-      },
-      en: {
-        title: '¡Nos casamos!',
-        month: 'Abril',
-        intro: 'Pasaremos el fin de semana juntos para celebrar y compartir este momento tan importante. Os esperamos a todos en',
-        sp: 'España'
+        intro: 'Provest ćemo vikend zajedno kako bismo proslavili i podijelili s vama ovaj za nas poseban trenutak. Radujemo se vašem dolasku u',
+        sp: 'Španjolskoj'
       }
     }
 

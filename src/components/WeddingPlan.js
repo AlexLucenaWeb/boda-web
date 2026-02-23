@@ -58,7 +58,9 @@ export default function WeddingPlan(props) {
         recena: 'Recena',
         patio: 'Patio de luces',
         jardines: 'Jardines',
-        salon: 'Salón Principal'
+        salon: 'Salón Principal',
+        ermita1: 'Ermita Nuestra Senora',
+        ermita2: 'de Gracia'
       },
       hz: {
         programa: 'Program velikog dana',
@@ -70,7 +72,9 @@ export default function WeddingPlan(props) {
         recena: 'Noćni zalogaj',
         patio: 'Unutarnje dvorište',
         jardines: 'Vrtovi',
-        salon: 'Glavna dvorana'
+        salon: 'Glavna dvorana',
+        ermita1: 'Crkva Gospe od',
+        ermita2: 'Milosti'
       },
       // en: {
       //   title: '¡Nos casamos!',
@@ -82,7 +86,7 @@ export default function WeddingPlan(props) {
 
 
   const moments = [
-    { time: "17.00", title: text[props.lang].ceremonia, place: "Ermita Nuestra Senora", place2:"de Gracia", align: "left" },
+    { time: "17.00", title: text[props.lang].ceremonia, place: text[props.lang].ermita1, place2:text[props.lang].ermita2, align: "left" },
     { time: "18.30", title: text[props.lang].recepcion,  place:"Palacete de Belmonte", place2: text[props.lang].patio,align: "right" },
     { time: "19.00", title: text[props.lang].coctel, place:"Palacete de Belmonte", place2: text[props.lang].jardines, align: "left" },
     { time: "20.00", title: text[props.lang].banquete, place:"Palacete de Belmonte", place2: text[props.lang].salon, align: "right" },

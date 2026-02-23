@@ -8,8 +8,8 @@ export default function Footer(props) {
       },
       hz: {
         title: 'Veselimo se vašem dolasku!',
-        intro: 'Ako imate bilo kakvu alergiju ili trebate posebnu opciju, molimo vas da nam to javite telefonom.',
-        intro2: 'Dat ćemo vam više informacija kako se datum bude približavao — pratite nas!'
+        intro: 'Sve dodatne detalje o vjenčanju, dolasku i organizaciji podijelit ćemo s vama u našoj zajedničkoj grupi.',
+        intro2: 'Ukoliko imate alergije ili posebne prehrambene potrebe, molimo vas da nam to javite na vrijeme.'
       }
     }
     return (
