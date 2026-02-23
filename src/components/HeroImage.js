@@ -67,9 +67,9 @@ export default function HeroImage() {
       {/* Contenido */}
       <div className="relative z-10 w-full">
         <nav className="flex gap-10 text-rosa py-2 w-full justify-between px-6">
-          <Link href={'/'}>ES</Link>
           <Link href={'/hz'}>HZ</Link>
-          <Link href={'/en'}>EN</Link>
+          <Link href={'/'}>ES</Link>
+          {/* <Link href={'/en'}>EN</Link> */}
         </nav>
         <div className="text-rosa pt-32">
           {/* <h1 className="text-6xl font-medium font-vibes text-center">

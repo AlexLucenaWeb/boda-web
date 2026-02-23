@@ -9,11 +9,11 @@ export default function Home() {
   return (
     <main className="">
         <HeroImage/>
-        <WeddingInfo/>
+        <WeddingInfo lang='hz'/>
         <Palacete/>
-        <WeddingPlan/>
+        <WeddingPlan lang='hz'/>
         <Foto />
-        <Footer />
+        <Footer lang='hz'/>
     </main>
   );
 }

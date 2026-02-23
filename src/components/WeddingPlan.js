@@ -46,19 +46,53 @@ function FadeInOnView({ children, className = "", delay = 0 }) {
   );
 }
 
-export default function WeddingPlan() {
+export default function WeddingPlan(props) {
+    const text = {
+      es: {
+        programa: 'Programa del gran día',
+        ceremonia:'Ceremonia',
+        recepcion:'Recepción',
+        coctel:'Cóctel',
+        banquete: 'Banquete',
+        fiesta: 'Fiesta',
+        recena: 'Recena',
+        patio: 'Patio de luces',
+        jardines: 'Jardines',
+        salon: 'Salón Principal'
+      },
+      hz: {
+        programa: 'Program velikog dana',
+        ceremonia:'Vjenčanje',
+        recepcion:'Zavjeti',
+        coctel:'Domjenak',
+        banquete: 'Svadbena večera',
+        fiesta: 'Zabava',
+        recena: 'Noćni zalogaj',
+        patio: 'Unutarnje dvorište',
+        jardines: 'Vrtovi',
+        salon: 'Glavna dvorana'
+      },
+      // en: {
+      //   title: '¡Nos casamos!',
+      //   month: 'Abril',
+      //   intro: 'Pasaremos el fin de semana juntos para celebrar y compartir este momento tan importante. Os esperamos a todos en',
+      //   sp: 'España'
+      // }
+    }
+
+
   const moments = [
-    { time: "17.00", title: "Ceremonia", place: "Ermita Nuestra Senora", place2:"de Gracia", align: "left" },
-    { time: "18.30", title: "Recepción",  place:"Palacete de Belmonte", place2: "Patio de luces",align: "right" },
-    { time: "19.00", title: "Cóctel", place:"Palacete de Belmonte", place2: "Jardines", align: "left" },
-    { time: "20.00", title: "Banquete", place:"Palacete de Belmonte", place2: "Salón Principal", align: "right" },
-    { time: "22.00", title: "Fiesta", place:"Palacete de Belmonte",place2: "Patio de luces", align: "left" },
+    { time: "17.00", title: text[props.lang].ceremonia, place: "Ermita Nuestra Senora", place2:"de Gracia", align: "left" },
+    { time: "18.30", title: text[props.lang].recepcion,  place:"Palacete de Belmonte", place2: text[props.lang].patio,align: "right" },
+    { time: "19.00", title: text[props.lang].coctel, place:"Palacete de Belmonte", place2: text[props.lang].jardines, align: "left" },
+    { time: "20.00", title: text[props.lang].banquete, place:"Palacete de Belmonte", place2: text[props.lang].salon, align: "right" },
+    { time: "22.00", title: text[props.lang].fiesta, place:"Palacete de Belmonte",place2: text[props.lang].patio, align: "left" },
     // { time: "00.00", title: "Recena", place:"Palacete de Belmonte", place2: "Patio de luces", align: "right" },
   ];
 
   return (
     <section data-component="Welcome" className="max-w-full px-4 py-10 bg-crema text-rosa">
-      <h2 className="text-2xl mb-10">Programa del gran día</h2>
+      <h2 className="text-2xl mb-10">{text[props.lang].programa}</h2>
 
       <div className="w-full relative text-xl">
         {/* Línea central */}
@@ -80,9 +114,9 @@ export default function WeddingPlan() {
           <div className={`pb-8 relative text-right`}>
             <span className="absolute left-1/2 top-2.5 h-2 w-2 rounded-full bg-rosa -translate-x-1/2" />
             <p>00.00</p>
-            <p className="text-2xl font-semibold">Recena</p>
+            <p className="text-2xl font-semibold">{text[props.lang].recena}</p>
             <p className="text-sm">Palacete de Belmonte</p>
-            <p className="text-sm">Patio de luces</p>
+            <p className="text-sm">{text[props.lang].patio}</p>
           </div>
         </FadeInOnView>
     </section>

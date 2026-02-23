@@ -8,12 +8,12 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <main className="">
-        <HeroImage/>
-        <WeddingInfo/>
-        <Palacete/>
-        <WeddingPlan/>
+        <HeroImage />
+        <WeddingInfo lang={'es'}/>
+        <Palacete />
+        <WeddingPlan lang={'es'}/>
         <Foto />
-        <Footer />
+        <Footer lang={'es'}/>
     </main>
   );
 }

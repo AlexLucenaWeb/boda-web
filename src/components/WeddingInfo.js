@@ -1,4 +1,25 @@
-export default function WeddingInfo() {
+export default function WeddingInfo(props) {
+
+    const text = {
+      es: {
+        title: '¡Nos casamos!',
+        month: 'Abril',
+        intro: 'Pasaremos el fin de semana juntos para celebrar y compartir este momento tan importante. Os esperamos a todos en',
+        sp: 'España'
+      },
+      hz: {
+        title: 'Vjenčamo se!',
+        month: 'Travanj',
+        intro: 'Provest ćemo vikend zajedno kako bismo proslavili i podijelili ovaj tako važan trenutak. Sve vas očekujemo u',
+        sp: 'Španjolska'
+      },
+      en: {
+        title: '¡Nos casamos!',
+        month: 'Abril',
+        intro: 'Pasaremos el fin de semana juntos para celebrar y compartir este momento tan importante. Os esperamos a todos en',
+        sp: 'España'
+      }
+    }
 
     return (
         <section 
@@ -7,7 +28,7 @@ export default function WeddingInfo() {
         >
           <div className="text-center tex-garamod text-lg"> 
 
-            <h2 className="text-5xl py-4">¡Nos casamos!</h2>
+            <h2 className="text-5xl py-4">{text[props.lang].title}</h2>
 
             <div className="space-y-3">
               <p className="text-2xl flex gap-5 justify-center">
@@ -18,18 +39,18 @@ export default function WeddingInfo() {
                   <span>26</span>
               </p>
               <div className="flex justify-center items-center gap-2">
-                <span className="w-8 h-px bg-amber-950"></span>
-                <p className="text-4xl pb-1">Abril</p>
-                <span className="w-8 h-px bg-amber-950"></span>
+                <span className="w-8 h-px bg-rosa"></span>
+                <p className="text-4xl pb-1">{text[props.lang].month}</p>
+                <span className="w-8 h-px bg-rosa"></span>
               </div>
               <p className="text-3xl">2026</p>
             </div>
 
-            <p className="text-base py-10">Pasaremos el fin de semana juntos para celebrar y compartir este momento tan importante. Os esperamos a todos en</p>
+            <p className="text-base py-10">{text[props.lang].intro}</p>
             <div className="space-y-2">
               <p className="text-2xl">Palacete de</p>
               <p className="text-vibes text-5xl">Belmonte</p>
-              <p>Cuenca - Spain</p>
+              <p>Cuenca - {text[props.lang].sp}</p>
             </div>
           </div>
         </section>
