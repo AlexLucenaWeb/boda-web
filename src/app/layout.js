@@ -2,8 +2,8 @@ import "./globals.css";
 import { Parisienne, Playfair_Display, Alex_Brush } from "next/font/google";
 
 export const metadata = {
-  title: "Nina and Alex",
-  description: "Nina and Alex wedding page.",
+  title: "Nina & Alex",
+  description: "Nuestra boda | Naše vjenčanje",
 };
 
 const vibes = Parisienne({
