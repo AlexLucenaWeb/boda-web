@@ -81,10 +81,10 @@ export default function WeddingPlan(props) {
 
   const moments = [
     { time: "17.00", title: text[props.lang].ceremonia, place: text[props.lang].ermita1, place2:text[props.lang].ermita2, align: "left" },
-    { time: "18.30", title: text[props.lang].recepcion,  place:"Palacete de Belmonte", place2: text[props.lang].patio,align: "right" },
-    { time: "19.00", title: text[props.lang].coctel, place:"Palacete de Belmonte", place2: text[props.lang].jardines, align: "left" },
-    { time: "20.00", title: text[props.lang].banquete, place:"Palacete de Belmonte", place2: text[props.lang].salon, align: "right" },
-    { time: "22.00", title: text[props.lang].fiesta, place:"Palacete de Belmonte",place2: text[props.lang].patio, align: "left" },
+    // { time: "18.30", title: text[props.lang].recepcion,  place:"Palacete de Belmonte", place2: text[props.lang].patio,align: "right" },
+    { time: "19.00", title: text[props.lang].coctel, place:"Palacete de Belmonte", place2: text[props.lang].jardines, align: "right" },
+    { time: "20.00", title: text[props.lang].banquete, place:"Palacete de Belmonte", place2: text[props.lang].salon, align: "left" },
+    { time: "22.00", title: text[props.lang].fiesta, place:"Palacete de Belmonte",place2: text[props.lang].patio, align: "right" },
     // { time: "00.00", title: "Recena", place:"Palacete de Belmonte", place2: "Patio de luces", align: "right" },
   ];
 
@@ -109,7 +109,7 @@ export default function WeddingPlan(props) {
         ))}
       </div>
        <FadeInOnView delay={300}>
-          <div className={`pb-8 relative text-right`}>
+          <div className={`pb-8 relative`}>
             <span className="absolute left-1/2 top-8 h-2 w-2 rounded-full bg-rosa -translate-x-1/2" />
             <p>00.00</p>
             <p className="text-2xl font-semibold text-rosa">{text[props.lang].recena}</p>
