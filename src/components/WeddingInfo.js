@@ -9,9 +9,9 @@ export default function WeddingInfo(props) {
       },
       hz: {
         title: 'Naše Vjenčanje',
-        month: 'Travanj',
+        month: 'Travanja',
         intro: 'Provest ćemo vikend zajedno kako bismo proslavili i podijelili s vama naše posebane trenutke. Radujemo se vašem dolasku u',
-        sp: 'Španjolsku'
+        sp: 'Španjolska'
       }
     }
 
@@ -26,11 +26,11 @@ export default function WeddingInfo(props) {
 
             <div className="space-y-3 ">
               <p className="text-2xl flex gap-5 justify-center">
-                  <span>24</span>
+                  <span>24{props.lang === 'hz' && '.'}</span>
                   <span>-</span>
-                  <span>25</span>
+                  <span>25{props.lang === 'hz' && '.'}</span>
                   <span>-</span>
-                  <span>26</span>
+                  <span>26{props.lang === 'hz' && '.'}</span>
               </p>
               <div className="flex justify-center items-center gap-2">
                 <span className="w-8 h-px bg-gray-800"></span>

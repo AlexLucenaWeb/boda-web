@@ -66,8 +66,8 @@ export default function WeddingPlan(props) {
         programa: 'Program velikog dana',
         ceremonia:'Vjenčanje',
         recepcion:'Zavjeti',
-        coctel:'Domjenak',
-        banquete: 'Svadbena večera',
+        coctel:'Dobrodošlica',
+        banquete: 'Večera',
         fiesta: 'Zabava',
         recena: 'Noćni zalogaj',
         patio: 'Unutarnje dvorište',
@@ -76,12 +76,6 @@ export default function WeddingPlan(props) {
         ermita1: 'Crkva Gospe od',
         ermita2: 'Milosti'
       },
-      // en: {
-      //   title: '¡Nos casamos!',
-      //   month: 'Abril',
-      //   intro: 'Pasaremos el fin de semana juntos para celebrar y compartir este momento tan importante. Os esperamos a todos en',
-      //   sp: 'España'
-      // }
     }
 
 
