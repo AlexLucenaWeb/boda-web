@@ -3,7 +3,7 @@ export default function Footer(props) {
   const text = {
       es: {
         title: '¡Os Esperamos!',
-        intro: 'Si tienes alguna alergia o necesitas, por favor comunícanoslo por teléfono.',
+        intro: 'Si tienes alguna alergia, por favor comunícanoslo por teléfono.',
         intro2: 'Os daremos más información cuando se acerque la fecha ¡estad atentos!'
       },
       hz: {
